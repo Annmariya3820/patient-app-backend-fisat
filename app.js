@@ -10,6 +10,9 @@ const app=express()
 app.use(cors())
 app.use(express.json())
 
+
+mongoose.connect("mongodb+srv://Annmariyasabu:annmariya@cluster0.gs6ae.mongodb.net/patientappdb?retryWrites=true&w=majority&appName=Cluster0")
+
 //admin signup
 
 app.post("/adminsignin",(req,res)=>{
